@@ -1,38 +1,45 @@
 #include <Keyboard.h>
 
-
-
-
 #define THROTTLEBTN 4
 #define BRAKEBTN 5
 
 void setup() {
-  Serial.begin(9600);
+  Keyboard.begin();
   pinMode(THROTTLEBTN, INPUT_PULLUP);
   pinMode(BRAKEBTN, INPUT_PULLUP);
-  Keyboard.begin();
-
+  
 }
-
+bool rdt=false;
+bool rdb=false;
 void loop() {
-  // put your main code here, to run repeatedly:
   byte buttonState = digitalRead(THROTTLEBTN);
   
   if (buttonState == LOW) {
-      Serial.println("THR Button is pressed");
-      Keyboard.write('w');
+      Keyboard.press('w');
+      rdt=true;
   }
-  else {
-      Serial.println("THR Button is not pressed");
+  else
+  {
+    if(rdt)
+    {
+      rdt=false;
+      Keyboard.release('w');
+    }
   }
+  
   byte buttonStateBrk = digitalRead(BRAKEBTN);
   if (buttonStateBrk == LOW) {
-      Serial.println("BRK Button is pressed");
-      Keyboard.write('s');
+      Keyboard.press('s');
+      rdb=true;
   }
-  else {
-      Serial.println("BRK Button is not pressed");
+  else
+  {
+    if(rdb)
+    {
+      rdb=false;
+      Keyboard.release('s');
+    }
   }
-  Serial.println(digitalRead(BRAKEBTN));
-  delay(100);
+  
+  delay(50);
 }
