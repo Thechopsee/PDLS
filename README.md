@@ -9,7 +9,7 @@ https://www.thingiverse.com/thing:4550372
 <br>
 Steering Whell:<br>
 https://www.thingiverse.com/thing:3663155 <br>
-Based on Thrustmaster T80 body QR adapter is in /stl folder
+Based on Thrustmaster T80 body QR adapter is in /stl folder <br>
 - Potetiometer mode ☑
 
 
