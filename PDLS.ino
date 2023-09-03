@@ -15,7 +15,7 @@ void setup() {
   Keyboard.begin();
   Joystick.begin();
   Serial.begin(9600);
-  //Joystick.setXAxisRange(0, 1023);
+
   pinMode(THROTTLEBTN, INPUT_PULLUP);
   pinMode(BRAKEBTN, INPUT_PULLUP);
   pinMode(A0,INPUT);
@@ -25,10 +25,7 @@ bool rdt=false;
 bool rdb=false;
 void loop() {
   byte buttonState = digitalRead(THROTTLEBTN);
-  
   int steValue=analogRead(A0);
-  //steValue=map(steValue,0,1023,0,255);
-  //popř Joystick.setSteering(steValue/4);
   Serial.println(steValue);
   Joystick.setSteering(steValue);
 
