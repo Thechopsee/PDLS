@@ -10,11 +10,11 @@ https://www.thingiverse.com/thing:4550372
 Steering Whell:<br>
 https://www.thingiverse.com/thing:3663155 <br>
 Ilustration image:<br>
-![ilustration image](http://url/to/img.png)
+![ilustration image]([http://url/to/img.png](https://raw.githubusercontent.com/Thechopsee/PDLS/main/images/wheel.jpg))<br>
 Based on Thrustmaster T80 body QR adapter is in /stl folder <br>
-- Potetiometer mode (10KΩ) ☑ 
-- Buttons: 12X 12mm Self-locking ☒ (..in progress)
-- Rotary controls :5X (10KΩ) potentiometer ☒ (..in progress)
+- Potetiometer mode (10KΩ) ☑ <br>
+- Buttons: 12X 12mm Self-locking ☒ (..in progress) <br>
+- Rotary controls :5X (10KΩ) potentiometer ☒ (..in progress) <br>
 <br>
 Paddle Shifters:<br>
 would be taken from here : https://www.thingiverse.com/thing:4058270 ☒ (..in progress)<br>
