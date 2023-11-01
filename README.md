@@ -3,7 +3,7 @@ Software part of racing setup i just making.
 Software is builded and tested on Arduino Leonardo.
 
 Ilustration image:<br>
-![ilustration image]([http://url/to/img.png](https://raw.githubusercontent.com/Thechopsee/PDLS/main/images/wheel.jpg)<br>
+![ilustration image](https://raw.githubusercontent.com/Thechopsee/PDLS/main/images/wheel.jpg)<br>
 
 Pedals:
 https://www.thingiverse.com/thing:4550372
