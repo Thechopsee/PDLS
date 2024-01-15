@@ -7,19 +7,25 @@ Ilustration image:<br>
 
 Pedals:
 https://www.thingiverse.com/thing:4550372
-- Keyboard mode(for NFS and...) ☑
-- Classic (Potentiometer) mode (10KΩ) ☒ (..in progress)
+- Keyboard mode(for NFS and...) ☒  (Manual issue ,working on stls...) 
+- Classic (Potentiometer) mode (10KΩ) ☑ (..in progress)
 <br>
 Steering Whell:<br>
 https://www.thingiverse.com/thing:3663155 <br>
 
 Based on Thrustmaster T80 body QR adapter is in /stl folder <br>
 - Potetiometer mode (10KΩ) ☑ <br>
-- Buttons: 12X 12mm Self-locking ☒ (..in progress) <br>
-- Rotary controls :5X (10KΩ) potentiometer ☒ (..in progress) <br>
+- Buttons: 10X 12mm Self-locking and Classic ☑  <br>
+- Rotary controls :3X (10KΩ) potentiometer ☑ <br>
 <br>
 Paddle Shifters:<br>
 would be taken from here : https://www.thingiverse.com/thing:4058270 ☒ (..in progress)<br>
+
+TODO:<br>
+- add wirring <br>
+- make some universal roraty controll and buttons <br>
+- add some tut texts <br>
+- upload f1 22 controller preset <br> 
 
 
 
