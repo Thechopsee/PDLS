@@ -26,9 +26,11 @@ Usage:<br>
 - open .ino file in IDE <br>
 - install Vector.h lib https://www.arduino.cc/reference/en/libraries/vector/ <br>
 - install Joystick.h lib https://github.com/MHeironimus/ArduinoJoystickLibrary <br>
-- upload your code to device <br> 
+- upload your code to device <br>
+- 
 Testing:<br>
 - testing site: https://hardwaretester.com/gamepad <br>
+
 TODO:<br>
 - add wirring <br>
 - make some universal roraty controll and buttons <br>
