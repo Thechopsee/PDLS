@@ -74,8 +74,8 @@ void setup() {
   pinMode(A3,INPUT);
   pinMode(A4,INPUT);
   pinMode(A5,INPUT);
-  Joystick.setAcceleratorRange(0, 61);
-  Joystick.setBrakeRange(0, 61);
+  Joystick.setAcceleratorRange(0, 70);
+  Joystick.setBrakeRange(0, 215);
 }
 
 void loop() {
@@ -86,9 +86,10 @@ void loop() {
   int power=analogRead(A4);
   power=(power-1023)*-1;
   Joystick.setAccelerator(power);
+ 
   int brake=analogRead(A5);
   brake=(brake-1023)*-1;
-
+  
   
   Joystick.setBrake(brake);
   Joystick.setSteering(steValue);
