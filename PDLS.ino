@@ -15,17 +15,13 @@ false, false, // No rudder or throttle
 true, true, true); // No accelerator, brake, or steering;
 
 
-
 Vector<SWButton*> swbuttons;
 
 void setup() {
   Keyboard.begin();
   Joystick.begin();
   Serial.begin(9600);
-  for(int i=1;i<=ELEMENT_COUNT_MAX;i++)
-  {
-      pinMode(i, INPUT_PULLUP);
-  }
+
   
 //  pinMode(2, INPUT_PULLUP);
 //  pinMode(3, INPUT_PULLUP);
@@ -69,30 +65,14 @@ void setup() {
 
    
   pinMode(A0,INPUT);
-  pinMode(A1,INPUT);
-  pinMode(A2,INPUT);
-  pinMode(A3,INPUT);
-  pinMode(A4,INPUT);
-  pinMode(A5,INPUT);
-  Joystick.setAcceleratorRange(0, 70);
-  Joystick.setBrakeRange(0, 215);
+  Joystick.setBrakeRange(0, 250);
 }
 
 void loop() {
   int steValue=analogRead(A0);
-  int controll1=analogRead(A1);
-  int controll2=analogRead(A2);
-  int controll3=analogRead(A3);
-  int power=analogRead(A4);
-  power=(power-1023)*-1;
-  Joystick.setAccelerator(power);
- 
-  int brake=analogRead(A5);
-  brake=(brake-1023)*-1;
   
-  
-  Joystick.setBrake(brake);
-  Joystick.setSteering(steValue);
+  Serial.println((steValue-395)*-1);
+  Joystick.setBrake((steValue-395)*-1);
   
   for (int i = 0; i < swbuttons.size(); ++i) 
   {
