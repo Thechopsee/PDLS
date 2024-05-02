@@ -15,13 +15,17 @@ false, false, // No rudder or throttle
 true, true, true); // No accelerator, brake, or steering;
 
 
+
 Vector<SWButton*> swbuttons;
 
 void setup() {
   Keyboard.begin();
   Joystick.begin();
   Serial.begin(9600);
-
+  for(int i=1;i<=ELEMENT_COUNT_MAX;i++)
+  {
+      pinMode(i, INPUT_PULLUP);
+  }
   
 //  pinMode(2, INPUT_PULLUP);
 //  pinMode(3, INPUT_PULLUP);
@@ -50,8 +54,8 @@ void setup() {
 //  swbuttons.push_back(new SWButton(11,'s'));
 //  swbuttons.push_back(new SWButton(12,'a'));
 
-  //buttons.push_back(new SWButton(1,' ',&Joystick))
-  //buttons.push_back(new SWButton(2,' ',&Joystick))
+  swbuttons.push_back(new SWButton(1,' ',&Joystick));
+  swbuttons.push_back(new SWButton(2,' ',&Joystick));
   swbuttons.push_back(new SWButton(3,(char)KEY_F5,&Joystick));
   swbuttons.push_back(new SWButton(4,'d',&Joystick));
   swbuttons.push_back(new SWButton(5,KEY_RETURN,&Joystick));
@@ -65,14 +69,30 @@ void setup() {
 
    
   pinMode(A0,INPUT);
-  Joystick.setBrakeRange(0, 250);
+  pinMode(A1,INPUT);
+  pinMode(A2,INPUT);
+  pinMode(A3,INPUT);
+  pinMode(A4,INPUT);
+  pinMode(A5,INPUT);
+  Joystick.setAcceleratorRange(0, 70);
+  Joystick.setBrakeRange(0, 160);
 }
 
 void loop() {
   int steValue=analogRead(A0);
+  int controll1=analogRead(A1);
+  int controll2=analogRead(A2);
+  int controll3=analogRead(A3);
+  int power=analogRead(A4);
+  power=(power-1023)*-1;
+  Joystick.setAccelerator(power);
+ 
+  int brake=analogRead(A5);
+  brake=(brake-1023)*-1;
   
-  Serial.println((steValue-395)*-1);
-  Joystick.setBrake((steValue-395)*-1);
+  
+  Joystick.setBrake(brake);
+  Joystick.setSteering(steValue);
   
   for (int i = 0; i < swbuttons.size(); ++i) 
   {
