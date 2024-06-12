@@ -19,7 +19,7 @@ Based on Thrustmaster T80 body QR adapter is in /stl folder <br>
 - Rotary controls :3X (10KΩ) potentiometer ☑ <br>
 <br>
 Paddle Shifters:<br>
-would be taken from here : https://www.thingiverse.com/thing:4058270 ☒ (..in progress)<br>
+would be taken from here : https://www.thingiverse.com/thing:4058270 ☑ (..in progress)<br>
 
 Usage:<br>
 - clone this repo <br>
@@ -33,7 +33,6 @@ Testing:<br>
 
 TODO:<br>
 - add wirring <br>
-- make some universal roraty controll and buttons <br>
 - add some tut texts <br>
 - upload f1 22 controller preset <br> 
 
