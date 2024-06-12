@@ -11,6 +11,7 @@ public:
 
     void processData(int data) override
     {
+      char old=category;
         if (data >= 0 && data <= 204)
         {
             category = 'h';
@@ -31,6 +32,9 @@ public:
         {
             category = 'w';
         }
+        if(category !=old)
+        {
         Keyboard.write(category);
+        }
     }
 };

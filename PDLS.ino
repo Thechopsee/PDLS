@@ -6,8 +6,6 @@
 #include <Joystick.h>
 #include "button.hh"
 
-
-
 const int ELEMENT_COUNT_MAX = 14; //max number of digital pins used on board
 const int CONTROLL_COUNT_MAX = 3;
 Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID, JOYSTICK_TYPE_JOYSTICK,
