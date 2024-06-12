@@ -4,6 +4,7 @@
 class PotenciometerControll{
     private:
     int pin;
+    protected:
     int lastData;
     public:
     PotenciometerControll(int pin)

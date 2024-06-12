@@ -2,6 +2,7 @@
 #include <Vector.h>
 #include "potenciometerControll.hh"
 #include "WheelControllF1.hh"
+#include "MFDMenuControll.hh"
 #include <Keyboard.h>
 #include <Joystick.h>
 #include "button.hh"
@@ -56,6 +57,8 @@ void setup() {
   pinMode(A5,INPUT);
 
   controlls.push_back(new WheelControllF1(A1));
+  controlls.push_back(new MFDMenuControll(A2,true));
+  controlls.push_back(new MFDMenuControll(A3,false));
   Joystick.setAcceleratorRange(0, 70);
   Joystick.setBrakeRange(0, 160);
 }
