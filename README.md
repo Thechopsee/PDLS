@@ -19,7 +19,7 @@ Based on Thrustmaster T80 body QR adapter is in /stl folder <br>
 - Rotary controls :3X (10KΩ) potentiometer ☑ <br>
 <br>
 Paddle Shifters:<br>
-would be taken from here : https://www.thingiverse.com/thing:4058270 ☒ (..in progress)<br>
+would be taken from here : https://www.thingiverse.com/thing:4058270 ☑ (..in progress)<br>
 
 Usage:<br>
 - clone this repo <br>
@@ -27,15 +27,17 @@ Usage:<br>
 - install Vector.h lib https://www.arduino.cc/reference/en/libraries/vector/ <br>
 - install Joystick.h lib https://github.com/MHeironimus/ArduinoJoystickLibrary <br>
 - upload your code to device <br>
-- 
+
 Testing:<br>
 - testing site: https://hardwaretester.com/gamepad <br>
 
+F1 games stering features:<br>
+- MDF menu UP/DOWN , LEFT/RIGHT controll (MDFMenuControll)<br>
+- Presset for wheels change (F1WhellControll)<br>
+  
 TODO:<br>
 - add wirring <br>
-- make some universal roraty controll and buttons <br>
-- add some tut texts <br>
-- upload f1 22 controller preset <br> 
+- repair QR
 
 
 
