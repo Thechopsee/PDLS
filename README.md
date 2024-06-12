@@ -8,7 +8,7 @@ Ilustration image:<br>
 Pedals:
 https://www.thingiverse.com/thing:4550372
 - Keyboard mode(for NFS and...) ☒  (Manual issue ,working on stls...) 
-- Classic (Potentiometer) mode (10KΩ) ☑ (..in progress)
+- Classic (Potentiometer) mode (10KΩ) ☑
 <br>
 Steering Whell:<br>
 https://www.thingiverse.com/thing:3663155 <br>
@@ -19,7 +19,7 @@ Based on Thrustmaster T80 body QR adapter is in /stl folder <br>
 - Rotary controls :3X (10KΩ) potentiometer ☑ <br>
 <br>
 Paddle Shifters:<br>
-would be taken from here : https://www.thingiverse.com/thing:4058270 ☑ (..in progress)<br>
+would be taken from here : https://www.thingiverse.com/thing:4058270 ☑ <br>
 
 Usage:<br>
 - clone this repo <br>
