@@ -27,14 +27,17 @@ Usage:<br>
 - install Vector.h lib https://www.arduino.cc/reference/en/libraries/vector/ <br>
 - install Joystick.h lib https://github.com/MHeironimus/ArduinoJoystickLibrary <br>
 - upload your code to device <br>
-- 
+
 Testing:<br>
 - testing site: https://hardwaretester.com/gamepad <br>
 
+F1 games stering features:<br>
+- MDF menu UP/DOWN , LEFT/RIGHT controll (MDFMenuControll)<br>
+- Presset for wheels change (F1WhellControll)<br>
+  
 TODO:<br>
 - add wirring <br>
-- add some tut texts <br>
-- upload f1 22 controller preset <br> 
+- repair QR
 
 
 
