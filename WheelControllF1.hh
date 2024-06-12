@@ -6,7 +6,6 @@ class WheelControllF1 : public PotenciometerControll
 {
 private:
     char category;
-
 public:
     WheelControllF1(int pin) : PotenciometerControll(pin) {}
 
@@ -32,6 +31,6 @@ public:
         {
             category = 'w';
         }
-        Keyboard.press(category);
+        Keyboard.write(category);
     }
 };

@@ -35,6 +35,7 @@ void setup() {
   PotenciometerControll* storage_array_controll[CONTROLL_COUNT_MAX];
   controlls.setStorage(storage_array_controll);
 
+
   swbuttons.push_back(new SWButton(1,' ',&Joystick));
   swbuttons.push_back(new SWButton(2,' ',&Joystick));
   swbuttons.push_back(new SWButton(3,(char)KEY_F5,&Joystick));
@@ -55,6 +56,8 @@ void setup() {
   pinMode(A3,INPUT);
   pinMode(A4,INPUT);
   pinMode(A5,INPUT);
+
+  controlls.push_back(new WheelControllF1(A1));
   Joystick.setAcceleratorRange(0, 70);
   Joystick.setBrakeRange(0, 160);
 }
@@ -67,7 +70,7 @@ void loop() {
  
   int brake=analogRead(A5);
   brake=(brake-1023)*-1;
-  
+  //Serial.println(analogRead(A1));
   
   Joystick.setBrake(brake);
   Joystick.setSteering(steValue);
