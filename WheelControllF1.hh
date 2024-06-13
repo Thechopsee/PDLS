@@ -7,11 +7,11 @@ class WheelControllF1 : public PotenciometerControll
 private:
     char category;
 public:
-    WheelControllF1(int pin) : PotenciometerControll(pin) {}
+    WheelControllF1(int pin) : PotenciometerControll(pin) {category='h';}
 
     void processData(int data) override
     {
-      char old=category;
+        char old=category;
         if (data >= 0 && data <= 204)
         {
             category = 'h';
@@ -34,7 +34,8 @@ public:
         }
         if(category !=old)
         {
-        Keyboard.write(category);
+          Serial.println(category);
+          Keyboard.write(category);
         }
     }
 };

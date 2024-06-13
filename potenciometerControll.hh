@@ -16,15 +16,12 @@ class PotenciometerControll{
     void updateData()
     {
         int data=analogRead(pin);
-        Serial.println(lastData);
-        Serial.println(data);
-        if(data>lastData-20 && data<lastData+20)
+        if(data>lastData-40 && data<lastData+40)
         {
           return;
         }
         else
         {
-          Serial.println("here");
           processData(data);
           this->lastData=data;
         }

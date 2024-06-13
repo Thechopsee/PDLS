@@ -57,7 +57,7 @@ void setup() {
   pinMode(A5,INPUT);
 
   controlls.push_back(new WheelControllF1(A1));
-  controlls.push_back(new MFDMenuControll(A2,true));
+  //controlls.push_back(new MFDMenuControll(A2,true));
   controlls.push_back(new MFDMenuControll(A3,false));
   Joystick.setAcceleratorRange(0, 70);
   Joystick.setBrakeRange(0, 160);
@@ -71,17 +71,16 @@ void loop() {
  
   int brake=analogRead(A5);
   brake=(brake-1023)*-1;
-  //Serial.println(analogRead(A1));
   
   Joystick.setBrake(brake);
   Joystick.setSteering(steValue);
   for(int i=0;i<controlls.size();i++)
   {
-      controlls[i]->updateData();
+    controlls[i]->updateData();
   }
   for (int i = 0; i < swbuttons.size(); ++i) 
   {
-        swbuttons[i]->checkButton();
+    swbuttons[i]->checkButton();
   }
   
   delay(50);
