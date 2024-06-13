@@ -9,6 +9,19 @@ class MFDMenuControll : public PotenciometerControll
   bool direction;
   public:
   MFDMenuControll(int pin,bool direct) : PotenciometerControll(pin) {this->direction=direct;}
+  void reset() override{
+    if(direction)
+    {
+      Keyboard.release('l');
+      Keyboard.release('r');
+    }
+    else
+    {
+     Keyboard.release('u');
+     Keyboard.release('d');
+    }
+      
+      }
   void processData(int data) override
   {
         int comp=0;
@@ -24,22 +37,22 @@ class MFDMenuControll : public PotenciometerControll
         {
           if(comp==2)
           {
-            Keyboard.write('l');
+            Keyboard.press('l');
           }
           else if(comp==1)
           {
-            Keyboard.write('r');
+            Keyboard.press('r');
           }
         }
         else
         {
           if(comp==2)
           {
-            Keyboard.write('d');
+            Keyboard.press('d');
           }
           else if(comp==1)
           {
-            Keyboard.write('u');
+            Keyboard.press('u');
           }
         }
         

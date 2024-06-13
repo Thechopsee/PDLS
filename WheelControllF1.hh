@@ -8,7 +8,9 @@ private:
     char category;
 public:
     WheelControllF1(int pin) : PotenciometerControll(pin) {category='h';}
-
+    void reset() override{
+      Keyboard.release(category);
+      }
     void processData(int data) override
     {
         char old=category;
@@ -34,8 +36,12 @@ public:
         }
         if(category !=old)
         {
+          if(rdt)
+          {
           Serial.println(category);
-          Keyboard.write(category);
+          Keyboard.press(category);
+          rdt=false;
+          }
         }
     }
 };
