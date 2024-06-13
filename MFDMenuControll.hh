@@ -55,6 +55,7 @@ class MFDMenuControll : public PotenciometerControll
             Keyboard.press('u');
           }
         }
+        rdt=false;
         
   }
 };
