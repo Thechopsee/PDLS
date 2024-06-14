@@ -57,7 +57,7 @@ void setup() {
   pinMode(A5,INPUT);
 
   controlls.push_back(new WheelControllF1(A1));
-  //controlls.push_back(new MFDMenuControll(A2,true));
+  controlls.push_back(new MFDMenuControll(A2,true));
   controlls.push_back(new MFDMenuControll(A3,false));
   Joystick.setAcceleratorRange(0, 70);
   Joystick.setBrakeRange(0, 160);
@@ -82,6 +82,5 @@ void loop() {
   {
     swbuttons[i]->checkButton();
   }
-  
   delay(50);
 }
