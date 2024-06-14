@@ -5,7 +5,7 @@
 #include "MFDMenuControll.hh"
 #include <Keyboard.h>
 #include <Joystick.h>
-#include "button.hh"
+#include "SWButton.hh"
 
 const int ELEMENT_COUNT_MAX = 14; //max number of digital pins used on board
 const int CONTROLL_COUNT_MAX = 3;
