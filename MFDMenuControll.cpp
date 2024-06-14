@@ -35,4 +35,5 @@ void MFDMenuControll::processData(int data) {
             Keyboard.press('u');
         }
     }
+    rdt=false;
 }
