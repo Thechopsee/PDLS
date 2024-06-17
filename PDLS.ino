@@ -34,13 +34,11 @@ void setup() {
   PotenciometerControll* storage_array_controll[CONTROLL_COUNT_MAX];
   controlls.setStorage(storage_array_controll);
 
-
   swbuttons.push_back(new SWButton(1,' ',&Joystick));
   swbuttons.push_back(new SWButton(2,' ',&Joystick));
   swbuttons.push_back(new SWButton(3,(char)KEY_F5,&Joystick));
   swbuttons.push_back(new SWButton(4,'d',&Joystick));
   swbuttons.push_back(new SWButton(5,KEY_RETURN,&Joystick));
-  //swbuttons.push_back(new SWButton(6,'e'));
   swbuttons.push_back(new SWButton(7,'w',&Joystick));
   swbuttons.push_back(new SWButton(8,'c',&Joystick));
   swbuttons.push_back(new SWButton(9,(char)KEY_F6,&Joystick));
@@ -48,11 +46,7 @@ void setup() {
   swbuttons.push_back(new SWButton(11,'s',&Joystick));
   swbuttons.push_back(new SWButton(12,'a',&Joystick));
 
-  //storage_array_controll.push_back(new WheelControllF1(A1));
-   
   pinMode(A0,INPUT);
-  pinMode(A2,INPUT);
-  pinMode(A3,INPUT);
   pinMode(A4,INPUT);
   pinMode(A5,INPUT);
 
@@ -67,13 +61,13 @@ void loop() {
   int steValue=analogRead(A0);
   int power=analogRead(A4);
   power=(power-1023)*-1;
-  Joystick.setAccelerator(power);
- 
   int brake=analogRead(A5);
   brake=(brake-1023)*-1;
   
+  Joystick.setAccelerator(power);
   Joystick.setBrake(brake);
   Joystick.setSteering(steValue);
+  
   for(int i=0;i<controlls.size();i++)
   {
     controlls[i]->updateData();

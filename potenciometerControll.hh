@@ -2,8 +2,6 @@
 #include "Arduino.h"
 #include <Timer.h>
 
-
-
 class PotenciometerControll {
 private:
     int pin;
