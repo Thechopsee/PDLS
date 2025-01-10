@@ -7,7 +7,6 @@ Ilustration image:<br>
 
 Pedals:
 https://www.thingiverse.com/thing:4550372
-- Keyboard mode(for NFS and...) ☒  (Manual issue ,working on stls...) 
 - Classic (Potentiometer) mode (10KΩ) ☑
 <br>
 Steering Whell:<br>
@@ -37,8 +36,8 @@ F1 games stering features:<br>
   
 TODO:<br>
 - add wirring <br>
-- repair QR
-
+- repair QR <br>
+- forcefeedback
 
 
 
