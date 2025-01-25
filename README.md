@@ -20,7 +20,11 @@ Based on Thrustmaster T80 body QR adapter is in /stl folder <br>
 Paddle Shifters:<br>
 Taken from here : https://www.thingiverse.com/thing:4058270 ☑ <br>
 
-Usage:<br>
+Usage Platformio IDE:
+- clone this repo <br>
+- add as platformio project <br>
+- compile and upload<br>
+Usage Arduino IDE:<br>
 - clone this repo <br>
 - open .ino file in IDE <br>
 - install Vector.h lib https://www.arduino.cc/reference/en/libraries/vector/ <br>
